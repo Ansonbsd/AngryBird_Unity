@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum BirdState
+{
+    Waiting,
+    Beforeshoot,
+    AfterShoot
+}
 public class Bird : MonoBehaviour
 {
     // Start is called before the first frame update
