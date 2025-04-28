@@ -64,7 +64,7 @@ public class Bird : MonoBehaviour
 
     private Vector3 GetMousePosition()
     {
-        Vector3 mp= Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        Vector3 mp= Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mp.z = 0;
         return mp;
     }
